@@ -1,0 +1,67 @@
+body {
+    font-family: "Cambria Math", serif;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+html {
+    scrollbar-color: #24243e #0f0c29;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#home {
+    height: 80vh;
+    padding-top: 7rem;
+}
+
+#api {
+    padding-top: 7rem;
+}
+
+.card {
+    height: 15rem;
+    transition: background 0.5s, transform 0.3s;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+.card h2 {
+    transition: margin-left 0.5s, transform 0.5s;
+}
+
+.card img {
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    background: lime;
+    transform: scale(1.075);
+}
+
+.card:hover h2 {
+    color: white;
+    margin-left: 2rem;
+    transform: scale(1.1);
+}
+
+.card:hover img {
+    color: white;
+    transform: scale(1.25);
+}
+
+.card p {
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    margin-top: -0.75rem;
+    display: flex;
+    justify-content: space-evenly;
+}
